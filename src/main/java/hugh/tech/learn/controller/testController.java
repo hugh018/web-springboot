@@ -15,8 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class testController {
+
     @RequestMapping("/hello")
     public String hello() {
         return "hello springboot";
     }
+
+
 }
