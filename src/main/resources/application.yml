@@ -14,6 +14,19 @@ spring:
       mode: html5
       servlet:
         content-type: text/html
+  redis:
+    database: 0 # Redis数据库索引（默认为0）
+    host: localhost
+    port: 6379
+    password: # Redis数据库索引（默认为0）
+    jedis:
+      pool:
+        max-active: 8 # 负值表示没有限制
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 10000  # ms
+
 
 
 

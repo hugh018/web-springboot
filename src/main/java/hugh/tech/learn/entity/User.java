@@ -1,5 +1,7 @@
 package hugh.tech.learn.entity;
 
+import java.io.Serializable;
+
 /**
  * @author: hugh
  * Created on 2019/2/8
@@ -7,7 +9,7 @@ package hugh.tech.learn.entity;
  * params:
  * link:
  */
-public class User {
+public class User implements Serializable {
     private Long id;
     private String name;
     private String sex;

@@ -23,14 +23,14 @@ public class SessionInterceptor implements WebMvcConfigurer {
      * excludePathPatterns():添加不需要拦截的路径
      */
     //注册拦截器
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        List list = new ArrayList(); //放行的4个请求
-        list.add("/user/toIndex");
-        list.add("/user/login");
-        list.add("/user/toRegister");
-        list.add("/user/register");
-        registry.addInterceptor(new UserIntercetor()).addPathPatterns("/**").excludePathPatterns(list); // only interception welcome
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        List list = new ArrayList(); //放行的4个请求
+//        list.add("/user/toIndex");
+//        list.add("/user/login");
+//        list.add("/user/toRegister");
+//        list.add("/user/register");
+//        registry.addInterceptor(new UserIntercetor()).addPathPatterns("/**").excludePathPatterns(list); // only interception welcome
+//    }
 
 }
