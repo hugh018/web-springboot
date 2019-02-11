@@ -2,6 +2,8 @@ package hugh.tech.learn.service.impl;
 
 import hugh.tech.learn.entity.User;
 import hugh.tech.learn.service.RedisService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -23,6 +25,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Service
 public class RedisServiceImpl implements RedisService<User> {
+    private static Logger logger = LoggerFactory.getLogger(RedisServiceImpl.class);
 
     private static final String REDIS_KEY = "REDIS_KEY_TEST"; // map的数据结构
 

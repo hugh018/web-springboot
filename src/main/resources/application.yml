@@ -26,6 +26,8 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 10000  # ms
+logging:
+  config: classpath:logs/logback.xml
 
 
 
