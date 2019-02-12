@@ -1,6 +1,5 @@
 package hugh.tech.learn.utils;
 
-import hugh.tech.learn.service.impl.RedisServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -30,7 +29,7 @@ public class GlobalDefaultExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public String defaultExceptionHandler(HttpServletRequest req, Exception e) {
-        logger.error("全局异常： " + e.getCause());
+        logger.error("全局异常： " + e.getMessage());
         e.printStackTrace();
         return "对不起，服务器繁忙，请稍后再试";
     }

@@ -26,6 +26,17 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 10000  # ms
+  mail:
+    host: smtp.163.com
+    username: hughhhusong@163.com
+    password: xxx
+    smtp:
+      auth: true
+      starttls:
+        enable: true
+        required: true
+
+
 logging:
   config: classpath:logs/logback.xml
 
@@ -43,3 +54,4 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
