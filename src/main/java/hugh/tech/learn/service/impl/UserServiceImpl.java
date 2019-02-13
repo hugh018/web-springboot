@@ -49,6 +49,7 @@ public class UserServiceImpl implements UserService {
         return userMapper.register(user);
     }
 
+
     /**
      * @param pageNum  begin pagenum
      * @param pageSize record nums
@@ -60,5 +61,11 @@ public class UserServiceImpl implements UserService {
         List<User> users = userMapper.selectAll();
         PageInfo pageInfo = new PageInfo(users);
         return pageInfo;
+    }
+
+
+    @Override
+    public void deleteById(Long id) {
+        userMapper.deleteById(id);
     }
 }

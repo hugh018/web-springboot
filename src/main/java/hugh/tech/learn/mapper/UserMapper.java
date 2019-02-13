@@ -3,6 +3,7 @@ package hugh.tech.learn.mapper;
 
 import hugh.tech.learn.entity.User;
 import org.apache.ibatis.annotations.*;
+
 import java.util.List;
 import java.util.Map;
 
@@ -54,5 +55,7 @@ public interface UserMapper {
     User login(String name, String sex);
 
     int register(User user);
+
+    void deleteById(Long id);
 
 }

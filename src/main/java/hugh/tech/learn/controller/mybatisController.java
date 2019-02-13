@@ -90,4 +90,16 @@ public class mybatisController {
 
         return userService.selectAll(pageNum, pageSize);
     }
+
+    @RequestMapping("/deleteById")
+    public String deleteById(Long id) {
+
+        try {
+            userService.deleteById(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "delete fail";
+        }
+        return "delete ok";
+    }
 }

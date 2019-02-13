@@ -22,4 +22,5 @@ public interface UserService {
 
     int register(User user);
 
+    void deleteById(Long id);
 }
