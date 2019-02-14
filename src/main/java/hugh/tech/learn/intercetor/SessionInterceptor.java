@@ -33,4 +33,16 @@ public class SessionInterceptor implements WebMvcConfigurer {
 //        registry.addInterceptor(new UserIntercetor()).addPathPatterns("/**").excludePathPatterns(list); // only interception welcome
 //    }
 
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        /**
+//         * 拦截器按照顺序执行
+//         */
+//        registry.addInterceptor(new TwoInterceptor()).addPathPatterns("/two/**")
+//                .addPathPatterns("/one/**");
+//        registry.addInterceptor(new OneInterceptor()).addPathPatterns("/one/**");
+//
+//        super.addInterceptors(registry);
+//    }
+
 }

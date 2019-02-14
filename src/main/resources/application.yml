@@ -14,6 +14,7 @@ spring:
       mode: html5
       servlet:
         content-type: text/html
+
   redis:
     database: 0 # Redis数据库索引（默认为0）
     host: localhost

@@ -33,6 +33,7 @@
 
 
 <!--  xml写法总结
+
   <insert id="insert" parameterType="com.javen.model.User" >
     insert into user_t (id, user_name, password,
       age)
@@ -102,9 +103,16 @@
 
 
 
-
-
-
+    查询简单的用户信息
+    <select id="queryUserSimplyInfoById" resultType="com.imooc.pojo.SysUser"
+        parameterType="java.lang.String" >
+        select
+            *
+        from
+            sys_user
+        where
+            id = #{id,jdbcType=VARCHAR}
+    </select>
 
 
 -->

@@ -14,6 +14,9 @@ public class User implements Serializable {
     private String name;
     private String sex;
 
+//    @Column(name = "last_login_ip") // 命名不同时，可以在这里指定映射关系
+//    private String lastLoginIp;
+
     public Long getId() {
         return id;
     }
