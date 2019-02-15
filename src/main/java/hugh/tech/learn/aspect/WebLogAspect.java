@@ -18,7 +18,7 @@ import java.util.Arrays;
 /**
  * @author: hugh
  * Created on 2019/2/11
- * func: 通过aop统一处理web请求的日志
+ * func: 通过aop统一处理web请求的日志(切面的应用)
  * params:
  * link: http://blog.didispace.com/springbootaoplog/
  */

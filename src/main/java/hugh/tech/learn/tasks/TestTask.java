@@ -9,12 +9,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestTask {
 
-	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-	// 定义每过3秒执行任务
+    // 定义每过3秒执行任务
 //    @Scheduled(fixedRate = 3000)
-//	@Scheduled(cron = "4-40 * * * * ?")
+//	@Scheduled(cron = "4-40 * * * * ?") // crontab -e linux中定时的写法
     public void reportCurrentTime() {
         System.out.println("现在时间：" + dateFormat.format(new Date()));
     }
+
 }
