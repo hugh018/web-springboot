@@ -1,0 +1,65 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+
+# IDEA
+.*
+!.gitignore
+.classpath
+.project
+*.iml
+.settings/
+.idea/
+target/
+output/
+test-output/
+*.class
+repos/
+local/
+lib/
+logs/
+log/
+
+# protobuf
+protoc
+protoc.exe
+
+# Python
+*.pyc
+*.pyo
+
+# Version properties
+*.version.properties
+
+# AOF Commons Builder
+.build/
+.builder/
+
+# Spark tmp files
+spark-warehouse/
+
+# Mac auto generate files
+.DS_Store
